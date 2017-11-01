@@ -16,10 +16,7 @@
         static void DebugDemo()
         {
             {
-                for (int i = 0; i < 5; i++)
-                {
-                    i--;
-                }
+             
             }
             int i = 10;
             int u = 20;

@@ -21,14 +21,16 @@ namespace Module03_ValueTypes
 
             x.ToString();
 
-            Person b;
+            Kunde b;
             b.navn = "Bibo";
             b.alder = 4;
+            b.køn = Køn.Kvinde;
 
 
-            Person e;
+            Kunde e;
             e.navn = "Evariste";
             e.alder = 4;
+            e.køn = Køn.Mand;
 
             b = e;
 
@@ -43,6 +45,20 @@ namespace Module03_ValueTypes
   
             Console.WriteLine(t.TotalDays);
 
+            int tal = 1;
+            tal++;
+            tal += 1;
+            tal = tal + 1; // alle ens!
+
+            int ms = DateTime.Now.Millisecond;
+            // var ms = DateTime.Now.Millisecond;
+
+            char tegn = 'e';
+            Console.WriteLine(tegn.ToString());
+
+            int yyy = 500;
+            short uu = Convert.ToInt16(yyy);
+
             const decimal momsPct = 0.25M;
             // momsPct = 1; const kan ikke ændres
 
@@ -53,10 +69,17 @@ namespace Module03_ValueTypes
             }
         }
     }
+
+    enum Køn
+    {
+        Mand,
+        Kvinde
+    }
     // værdibaseret klasse (struc på stack)
-    struct Person
+    struct Kunde
     {
         public string navn;
         public int alder;
+        public Køn køn;
     }
 }
