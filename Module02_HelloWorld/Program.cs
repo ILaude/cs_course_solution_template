@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-
-            
+            DebugDemo();
 
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -14,8 +13,14 @@
             }
         }
 
-        static void DebugDemo() {
-
+        static void DebugDemo()
+        {
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    i--;
+                }
+            }
             int i = 10;
             int u = 20;
             u = u + i;
@@ -33,6 +38,10 @@
 
         }
 
+        /// <summary>
+        /// Denne metode lægger 1 til i.
+        /// </summary>
+        /// <param name="i"></param>
         static void Test1(int i)
         {
             i++;
