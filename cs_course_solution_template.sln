@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module07_Properties", "Modu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "ConsoleApp1\HelloWorld.csproj", "{49C320EB-FDF1-4FD8-ACF6-52CCE1CD98AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03Variabler", "03Variabler\03Variabler.csproj", "{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{49C320EB-FDF1-4FD8-ACF6-52CCE1CD98AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C320EB-FDF1-4FD8-ACF6-52CCE1CD98AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C320EB-FDF1-4FD8-ACF6-52CCE1CD98AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +129,7 @@ Global
 		{1ADB742F-AFC9-48E4-A036-484829B78DFF} = {614BAE00-84EB-47BC-8C41-71B6E2131A8C}
 		{76322B76-8542-4732-B944-23F75E811409} = {614BAE00-84EB-47BC-8C41-71B6E2131A8C}
 		{49C320EB-FDF1-4FD8-ACF6-52CCE1CD98AD} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
+		{AFC3A04A-A11A-4CA8-9BF1-5B92438CFDBD} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5354BDA-3E12-4F48-8A32-DAFA5BEC4AA4}

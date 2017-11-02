@@ -10,10 +10,10 @@ namespace Module03_ValueTypes
 
             // int og string er typer. Pejer på pladser i hukommelsen.
             int x = 1; //
-            string navn = "Tom";
+            // string navn = "Tom";
 
             // var = find selv ud af det.
-            var i = 1.0;
+            //var i = 1.0;
 
             int y = 6;
             x = y;
@@ -36,13 +36,15 @@ namespace Module03_ValueTypes
 
             e.alder = 3;
 
+            //Kunde bb = new Kunde();
+
             DateTime nu = DateTime.Now;
             DateTime jul = new DateTime(2017, 12, 24);
 
             TimeSpan t = jul.Subtract(nu);
 
             Console.WriteLine("Antal dage til jul:");
-  
+
             Console.WriteLine(t.TotalDays);
 
             int tal = 1;
@@ -59,7 +61,7 @@ namespace Module03_ValueTypes
             int yyy = 500;
             short uu = Convert.ToInt16(yyy);
 
-            const decimal momsPct = 0.25M;
+            // const decimal momsPct = 0.25M;
             // momsPct = 1; const kan ikke ændres
 
             if (System.Diagnostics.Debugger.IsAttached)
