@@ -51,6 +51,15 @@ namespace Opgave04Månedsløn
                 Console.WriteLine(MånedslønSorteret[i]);
             }
 
+            Console.WriteLine("Første indeks med værdien 15000:");
+            int indeks = System.Array.IndexOf(Månedsløn, 15000);
+            Console.WriteLine(indeks);
+
+            double gnsAuto = Månedsløn.Average();
+
+
+            /// Forsmag til LINQ
+            var res = Månedsløn.Where(i => i > 2000).OrderBy(i => i);
 
         }
     }
