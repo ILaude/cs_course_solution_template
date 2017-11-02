@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A1F3DDC-9D77-418A-83F2-DC422391FEB4}</ProjectGuid>
+    <ProjectGuid>{9B3C8510-E688-4A7D-B23A-AB8B597CC570}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Module12_Delegates</RootNamespace>
-    <AssemblyName>Module12_Delegates</AssemblyName>
+    <RootNamespace>Opgave10Tabel</RootNamespace>
+    <AssemblyName>Opgave10Tabel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
