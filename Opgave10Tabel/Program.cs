@@ -17,21 +17,20 @@ namespace Opgave10Tabel
                     string tal = (i * k).ToString();
 
 
-                    if ((i*k) % 2 == 0)
+                    if ((i * k) % 2 == 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                     }
-                    else if((i * k) > 50)
-                        {
+                    else if ((i * k) > 50)
+                    {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-
                     }
-                    
+
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.White;
                     }
-                   
+
                     Console.Write(tal.PadLeft(5));
                 }
                 Console.Write("\r\n");
