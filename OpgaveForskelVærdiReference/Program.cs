@@ -31,7 +31,7 @@ namespace OpgaveForskelVærdiReference
 
         }
     }
-    public class Person
+    public struct Person
     {
         public string navn;
     }
