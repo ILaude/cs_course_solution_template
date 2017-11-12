@@ -21,9 +21,23 @@ namespace BeregnArray
         {
             Array.Sort(array);
             ArrayResultat resultat = new ArrayResultat();
-            resultat.sum = array.Sum();
-            resultat.gennemsnit = array.Average();
+            resultat.sum = ArraySum(array);
+            resultat.gennemsnit = ArrayGennemsnit(array);
             return resultat;
+        }
+        static double ArraySum(int[] array)
+        {
+            double sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            return sum;
+        }
+        static double ArrayGennemsnit(int[] array)
+        {
+            var gennemsnit = ArraySum(array)/ array.Length;
+            return gennemsnit;
         }
     }
     public struct ArrayResultat
