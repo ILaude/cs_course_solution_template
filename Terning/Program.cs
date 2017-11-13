@@ -31,6 +31,9 @@ namespace Terning
             t3.Skriv();
             t3.Ryst();
             t3.Skriv();
+
+            Terning t4 = new Terning(9);
+            t4.Skriv();
         }
     }
 }

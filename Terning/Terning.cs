@@ -47,9 +47,13 @@ namespace Terning
             }
         }
 
-        public Terning(bool snyd)
+        public Terning(int værdi, bool snyd): this(værdi)
         {
-            this.Ryst();
+            this.snyd = snyd;
+        }
+
+        public Terning(bool snyd) : this()
+        {
             this.snyd = snyd;
         }
     }
