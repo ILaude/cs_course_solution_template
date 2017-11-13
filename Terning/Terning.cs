@@ -19,7 +19,7 @@ namespace Terning
         }
         public void Ryst()
         {
-            if (this.snyd == true)
+            if (this.snyd)
             {
                 this.værdi = 6;
             }
@@ -31,13 +31,25 @@ namespace Terning
 
         public Terning()
         {
-            this.værdi = 1;
+            this.Ryst();
             this.snyd = false;
+        }
+
+        public Terning(int værdi)
+        {
+            if (værdi< 1 || værdi > 6)
+            {
+                this.værdi = 2;
+            }
+            else
+            {
+                this.værdi = værdi;
+            }
         }
 
         public Terning(bool snyd)
         {
-            this.værdi = 1;
+            this.Ryst();
             this.snyd = snyd;
         }
     }
