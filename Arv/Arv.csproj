@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9239C95-8B91-45B0-B3AB-D2DDDFE7F764}</ProjectGuid>
+    <ProjectGuid>{C599EE63-756D-4EA2-B783-8E3C9BE9A760}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TerningAvanceret</RootNamespace>
-    <AssemblyName>TerningAvanceret</AssemblyName>
+    <RootNamespace>Arv</RootNamespace>
+    <AssemblyName>Arv</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bæger.cs" />
+    <Compile Include="Elev.cs" />
+    <Compile Include="Instruktør.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Terning.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
