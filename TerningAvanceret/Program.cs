@@ -16,6 +16,9 @@ namespace Terningspil
 
             Terning t2 = new Terning(4);
             t2.Skriv();
+
+            Bæger bæger = new Bæger(4);
+            Console.WriteLine();
         }
     }
 }

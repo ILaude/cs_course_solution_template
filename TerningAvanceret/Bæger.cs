@@ -11,10 +11,29 @@ namespace Terningspil
     {
         private Terning[] terninger;
 
-        public Bæger()
+        private int antalTerninger;
+
+        public int AntalTerninger
         {
-            terninger = new Terning[5];
-            for (int i = 0; i < 5; i++)
+            get { return antalTerninger; }
+            set {
+                if (value <= 0)
+                {
+
+                    Console.WriteLine("Jeg giver dig en terning!");
+                    value = 1;
+                }
+
+                antalTerninger = value;
+            }
+        }
+
+
+        public Bæger(int antal)
+        {
+            this.AntalTerninger = antal;
+            terninger = new Terning[AntalTerninger];
+            for (int i = 0; i < AntalTerninger; i++)
             {
                 terninger[i] = new Terning();
             }
