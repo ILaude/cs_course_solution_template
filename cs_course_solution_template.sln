@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdvidetRandom", "UdvidetRan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpelFejlhåndtering", "SimpelFejlhåndtering\SimpelFejlhåndtering.csproj", "{C34948BD-871E-4F49-A0CC-53342158D3A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog", "NLog\NLog.csproj", "{B7403881-69C3-4F5D-AD4B-C505E6555B10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +219,10 @@ Global
 		{C34948BD-871E-4F49-A0CC-53342158D3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C34948BD-871E-4F49-A0CC-53342158D3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C34948BD-871E-4F49-A0CC-53342158D3A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7403881-69C3-4F5D-AD4B-C505E6555B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7403881-69C3-4F5D-AD4B-C505E6555B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7403881-69C3-4F5D-AD4B-C505E6555B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7403881-69C3-4F5D-AD4B-C505E6555B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -256,6 +262,7 @@ Global
 		{9F280685-8171-43CF-AE63-FE551DF5933A} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{95BF6DB8-1565-4AE7-888D-010C3D3FDB46} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{C34948BD-871E-4F49-A0CC-53342158D3A0} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
+		{B7403881-69C3-4F5D-AD4B-C505E6555B10} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5354BDA-3E12-4F48-8A32-DAFA5BEC4AA4}
