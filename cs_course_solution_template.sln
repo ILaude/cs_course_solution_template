@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NedarvningPolymorfi", "Neda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgetInterface", "EgetInterface\EgetInterface.csproj", "{26213D17-09C7-4BB7-9206-50BF3854C830}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare", "Compare\Compare.csproj", "{E9099081-15AC-4A88-B1FE-89E3BB621178}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -253,6 +255,10 @@ Global
 		{26213D17-09C7-4BB7-9206-50BF3854C830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26213D17-09C7-4BB7-9206-50BF3854C830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26213D17-09C7-4BB7-9206-50BF3854C830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9099081-15AC-4A88-B1FE-89E3BB621178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9099081-15AC-4A88-B1FE-89E3BB621178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9099081-15AC-4A88-B1FE-89E3BB621178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9099081-15AC-4A88-B1FE-89E3BB621178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,6 +304,7 @@ Global
 		{2AAB1B21-8C39-434A-923D-B51A3BE4E01C} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{F4A38ED2-FB52-4EDC-960B-2A36E472499B} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{26213D17-09C7-4BB7-9206-50BF3854C830} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
+		{E9099081-15AC-4A88-B1FE-89E3BB621178} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5354BDA-3E12-4F48-8A32-DAFA5BEC4AA4}
