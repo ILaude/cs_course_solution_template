@@ -27,6 +27,7 @@ namespace ConsoleApp2
 
             YatzyBæger b = new YatzyBæger();
             b.Skriv();
+            Console.WriteLine("Max antal ens:" + b.MaxAntalEns());
             b.Resultat();
 
 

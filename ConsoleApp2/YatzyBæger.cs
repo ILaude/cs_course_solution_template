@@ -49,6 +49,16 @@ namespace ConsoleApp2
             return antal;
         }
 
+        public int MaxAntalEns()
+        {
+            var max = 0;
+            for (int i = 1; i < 7; i++)
+            {
+                max = Math.Max(max, AntalTerningerMedGivenVærdi(i));
+            }
+            return max;
+        }
+
 
         public bool FemEns()
         {
@@ -150,11 +160,7 @@ namespace ConsoleApp2
 
         public bool LilleStraight()
         {
-            if (AntalTerningerMedGivenVærdi(1) == 1 &&
-                AntalTerningerMedGivenVærdi(2) == 1 &&
-                AntalTerningerMedGivenVærdi(3) == 1 &&
-                AntalTerningerMedGivenVærdi(4) == 1 &&
-                AntalTerningerMedGivenVærdi(5) == 1)
+            if (MaxAntalEns() == 1 && AntalTerningerMedGivenVærdi(6) == 0)
             {
                 return true;
             }
@@ -163,11 +169,7 @@ namespace ConsoleApp2
 
         public bool StorStraight()
         {
-            if (AntalTerningerMedGivenVærdi(6) == 1 &&
-                AntalTerningerMedGivenVærdi(2) == 1 &&
-                AntalTerningerMedGivenVærdi(3) == 1 &&
-                AntalTerningerMedGivenVærdi(4) == 1 &&
-                AntalTerningerMedGivenVærdi(5) == 1)
+            if (MaxAntalEns() == 1 && AntalTerningerMedGivenVærdi(1) == 0)
             {
                 return true;
             }
