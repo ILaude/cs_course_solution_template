@@ -62,13 +62,10 @@ namespace ConsoleApp2
 
         public bool FemEns()
         {
-            for (int i = 1; i < 7; i++)
+            if (MaxAntalEns()==5)
             {
-                if (this.AntalTerningerMedGivenVærdi(i) == 5)
-                {
-                    //Console.WriteLine("Du har fem ens.");
-                    return true;
-                }
+                //Console.WriteLine("Du har fem ens.");
+                return true;
             }
 
             //Console.WriteLine("Du har ikke fem ens.");
