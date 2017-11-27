@@ -49,6 +49,21 @@ namespace ConsoleApp2
             return antal;
         }
 
+        public List<int> VærdiSomDerErEtGivenAntalAf(int værdi)
+        {
+            List<int> liste = new List<int>();
+
+            for (int i = 1; i < 7; i++)
+            {
+                if (AntalTerningerMedGivenVærdi(i) == værdi)
+                {
+                    liste.Add(i);
+                }
+            }
+
+            return liste;
+        }
+
         public int MaxAntalEns()
         {
             var max = 0;
@@ -199,11 +214,13 @@ namespace ConsoleApp2
             else if (ToPar())
             {
                 Console.WriteLine("Du har to par.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if (EtPar())
             {
                 Console.WriteLine("Du har et par.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if(LilleStraight())
@@ -229,13 +246,9 @@ namespace ConsoleApp2
             {
                 var points = 0;
 
-                for (int i = 1; i < 7; i++)
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(5))
                 {
-                    if (AntalTerningerMedGivenVærdi(i)== 5)
-                    {
-                        points = 5 * i;
-                    }
-
+                    points += 5 * item;
                 }
 
                 return points;
@@ -244,13 +257,9 @@ namespace ConsoleApp2
             {
                 var points = 0;
 
-                for (int i = 1; i < 7; i++)
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(4))
                 {
-                    if (AntalTerningerMedGivenVærdi(i) == 4)
-                    {
-                        points = 4 * i;
-                    }
-
+                    points += 4 * item;
                 }
 
                 return points;
@@ -260,13 +269,10 @@ namespace ConsoleApp2
             {
                 var points = 0;
 
-                for (int i = 1; i < 7; i++)
-                {
-                    if (AntalTerningerMedGivenVærdi(i) == 3)
-                    {
-                        points = 3 * i;
-                    }
 
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(3))
+                {
+                    points += 3 * item;
                 }
 
                 return points;
@@ -276,17 +282,50 @@ namespace ConsoleApp2
             {
                 var points = 0;
 
-                for (int i = 1; i < 7; i++)
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
                 {
-                    if (AntalTerningerMedGivenVærdi(i) == 2)
-                    {
-                        points = 2 * i;
-                    }
-
+                    points += 2 * item;
                 }
+
+
+
 
                 return points;
             }
+
+            if (ToPar())
+            {
+                var points = 0;
+
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
+                {
+                    points += 2 * item;
+                }
+
+
+
+
+                return points;
+            }
+
+            if (FuldtHus())
+            {
+                var points = 0;
+
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(3))
+                {
+                    points += 3 * item;
+                }
+
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
+                {
+                    points += 2 * item;
+                }
+
+
+                return points;
+            }
+
 
             if (LilleStraight())
             {
@@ -297,6 +336,8 @@ namespace ConsoleApp2
             {
                 return 20;
             }
+
+
                 return 0;
         }
     }

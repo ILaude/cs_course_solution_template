@@ -29,15 +29,15 @@ namespace ConsoleApp2
             b.Skriv();
             Console.WriteLine("Max antal ens:" + b.MaxAntalEns());
             b.Resultat();
-            Console.WriteLine(b.Points());
 
 
-            b.Ryst();
-            b.Skriv();
 
-            Console.WriteLine("Antal fire:" + b.AntalTerningerMedGivenVærdi(4));
-            b.Resultat();
-            Console.WriteLine(b.Points());
+            for (int i = 0; i < 10; i++)
+            {
+                b.Ryst();
+                b.Skriv();
+                b.Resultat(); 
+            }
 
         }
     }
