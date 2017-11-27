@@ -29,6 +29,7 @@ namespace ConsoleApp2
             b.Skriv();
             Console.WriteLine("Max antal ens:" + b.MaxAntalEns());
             b.Resultat();
+            Console.WriteLine(b.Points());
 
 
             b.Ryst();
@@ -36,6 +37,7 @@ namespace ConsoleApp2
 
             Console.WriteLine("Antal fire:" + b.AntalTerningerMedGivenVærdi(4));
             b.Resultat();
+            Console.WriteLine(b.Points());
 
         }
     }

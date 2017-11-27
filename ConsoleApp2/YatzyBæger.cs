@@ -181,16 +181,19 @@ namespace ConsoleApp2
             else if (FemEns())
             {
                 Console.WriteLine("Du har fem ens.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if (FireEns())
             {
                 Console.WriteLine("Du har fire ens.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if (TreEns())
             {
                 Console.WriteLine("Du har tre ens.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if (ToPar())
@@ -206,16 +209,95 @@ namespace ConsoleApp2
             else if(LilleStraight())
             {
                 Console.WriteLine("Du har en lille straight.");
+                Console.WriteLine(Points() + " point");
             }
 
             else if (StorStraight())
             {
                 Console.WriteLine("Du har en stor straight.");
+                Console.WriteLine(Points() + " point");
             }
 
             else
                 Console.WriteLine("Du har ikke noget brugbart");
 
+        }
+
+        public int Points()
+        {
+            if (FemEns())
+            {
+                var points = 0;
+
+                for (int i = 1; i < 7; i++)
+                {
+                    if (AntalTerningerMedGivenVærdi(i)== 5)
+                    {
+                        points = 5 * i;
+                    }
+
+                }
+
+                return points;
+            }
+            if (FireEns())
+            {
+                var points = 0;
+
+                for (int i = 1; i < 7; i++)
+                {
+                    if (AntalTerningerMedGivenVærdi(i) == 4)
+                    {
+                        points = 4 * i;
+                    }
+
+                }
+
+                return points;
+            }
+
+            if (TreEns())
+            {
+                var points = 0;
+
+                for (int i = 1; i < 7; i++)
+                {
+                    if (AntalTerningerMedGivenVærdi(i) == 3)
+                    {
+                        points = 3 * i;
+                    }
+
+                }
+
+                return points;
+            }
+
+            if (EtPar())
+            {
+                var points = 0;
+
+                for (int i = 1; i < 7; i++)
+                {
+                    if (AntalTerningerMedGivenVærdi(i) == 2)
+                    {
+                        points = 2 * i;
+                    }
+
+                }
+
+                return points;
+            }
+
+            if (LilleStraight())
+            {
+                return 15;
+            }
+
+            if (StorStraight())
+            {
+                return 20;
+            }
+                return 0;
         }
     }
 }

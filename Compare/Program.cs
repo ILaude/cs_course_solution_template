@@ -27,6 +27,7 @@ namespace Compare
         public string Navn { get; set; }
         public int Alder { get; set; }
 
+
         public int CompareTo(object obj)
         {
             Hund anden = obj as Hund;
