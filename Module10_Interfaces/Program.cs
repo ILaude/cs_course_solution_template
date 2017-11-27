@@ -12,4 +12,41 @@
             }
         }
     }
+
+    interface IMaskine
+    {
+        void Start();
+        void Stop();
+
+        int Status(bool v);
+    }
+
+    class Tandbørste : IMaskine {
+
+        public void Start() { }
+        public void Stop() { }
+
+        public int Status(bool v)
+        {
+            return 0;
+        }
+    }
+
+    class Lastbil : IMaskine
+    {
+        public void Start()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public int Status(bool v)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Stop()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }
