@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenetiskKlasse", "GenetiskK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap", "Swap\Swap.csproj", "{2541B9C2-BBD6-4775-B056-0664156D84E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateBeregn", "DelegateBeregn\DelegateBeregn.csproj", "{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -289,6 +291,10 @@ Global
 		{2541B9C2-BBD6-4775-B056-0664156D84E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2541B9C2-BBD6-4775-B056-0664156D84E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2541B9C2-BBD6-4775-B056-0664156D84E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -340,6 +346,7 @@ Global
 		{45ADAEAD-8F61-498F-B350-FF8BD304889B} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{45FA6043-BA08-48A3-9946-B0E504A8E2D2} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 		{2541B9C2-BBD6-4775-B056-0664156D84E7} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
+		{4F6DA1DF-2710-4EFD-84BF-8419FBF175F2} = {5E1B2542-C3EE-4515-8C83-C8E805B50E0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5354BDA-3E12-4F48-8A32-DAFA5BEC4AA4}
