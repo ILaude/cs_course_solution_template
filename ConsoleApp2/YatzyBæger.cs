@@ -49,9 +49,23 @@ namespace ConsoleApp2
             return antal;
         }
 
-        public List<int> VærdiSomDerErEtGivenAntalAf(int værdi)
+        public List<int> VærdierFlereEndEnAf()
         {
             List<int> liste = new List<int>();
+
+            for (int i = 1; i < 7; i++)
+            {
+                if (AntalTerningerMedGivenVærdi(i) > 1)
+                {
+                    liste.Add(AntalTerningerMedGivenVærdi(i));
+                }
+            }
+            return liste;
+        }
+
+        public HashSet<int> VærdiSomDerErEtGivenAntalAf(int værdi)
+        {
+            HashSet<int> liste = new HashSet<int>();
 
             for (int i = 1; i < 7; i++)
             {
@@ -62,6 +76,21 @@ namespace ConsoleApp2
             }
 
             return liste;
+        }
+
+        public int SummerPoint()
+        {
+            var points = 0;
+
+            foreach (var værdi in VærdierFlereEndEnAf())
+            {
+                foreach (var item in VærdiSomDerErEtGivenAntalAf(værdi))
+                {
+                    points += værdi * item;
+                }
+
+            }
+            return points;
         }
 
         public int MaxAntalEns()
@@ -192,6 +221,7 @@ namespace ConsoleApp2
             if (FuldtHus())
             {
                 Console.WriteLine("Du har fuldt hus.");
+                Console.WriteLine(Points() + " point");
             }
             else if (FemEns())
             {
@@ -243,87 +273,37 @@ namespace ConsoleApp2
         public int Points()
         {
             if (FemEns())
-            {
-                var points = 0;
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(5))
-                {
-                    points += 5 * item;
-                }
-
-                return points;
+ 
+                return SummerPoint();
             }
             if (FireEns())
             {
-                var points = 0;
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(4))
-                {
-                    points += 4 * item;
-                }
-
-                return points;
+                return SummerPoint();
             }
 
             if (TreEns())
             {
-                var points = 0;
-
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(3))
-                {
-                    points += 3 * item;
-                }
-
-                return points;
+               
+                return SummerPoint();
             }
 
             if (EtPar())
             {
-                var points = 0;
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
-                {
-                    points += 2 * item;
-                }
-
-
-
-
-                return points;
+             
+                return SummerPoint();
             }
 
             if (ToPar())
             {
-                var points = 0;
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
-                {
-                    points += 2 * item;
-                }
-
-
-
-
-                return points;
+                List<int> liste = new List<int> { 2 };
+                return SummerPoint();
             }
 
             if (FuldtHus())
             {
-                var points = 0;
+                List<int> liste = new List<int> { 2, 3 };
+                return SummerPoint();
 
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(3))
-                {
-                    points += 3 * item;
-                }
-
-                foreach (var item in VærdiSomDerErEtGivenAntalAf(2))
-                {
-                    points += 2 * item;
-                }
-
-
-                return points;
             }
 
 
