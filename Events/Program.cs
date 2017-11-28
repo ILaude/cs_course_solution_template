@@ -10,8 +10,8 @@ namespace Events
     {
         static void Main(string[] args)
         {
-            Kunde k = new Kunde() { KreditMax = -500, Saldo = 0 };
-            k.kreditoverskrevet += (s, e) => Console.WriteLine("Kredit overskrevet med " + e.overskrevetMed);
+            Kunde k = new Kunde() { Navn = "Tom", KreditMax = -500, Saldo = 0 };
+            k.kreditoverskrevet += (s, e) => Console.WriteLine("Kunde {0}: Kredit overskrevet med {1}", k.Navn, e.overskrevetMed);
             k.Køb(200);
             k.Køb(500);
 
