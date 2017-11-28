@@ -273,7 +273,7 @@ namespace ConsoleApp2
         public int Points()
         {
             if (FemEns())
- 
+            {
                 return SummerPoint();
             }
             if (FireEns())
@@ -295,13 +295,11 @@ namespace ConsoleApp2
 
             if (ToPar())
             {
-                List<int> liste = new List<int> { 2 };
                 return SummerPoint();
             }
 
             if (FuldtHus())
             {
-                List<int> liste = new List<int> { 2, 3 };
                 return SummerPoint();
 
             }
