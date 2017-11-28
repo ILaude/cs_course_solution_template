@@ -11,7 +11,7 @@ namespace Events
         static void Main(string[] args)
         {
             Kunde k = new Kunde() { Navn = "Tom", KreditMax = -500, Saldo = 0 };
-            k.kreditoverskrevet += (s, e) => Console.WriteLine("Kunde {0}: Kredit overskrevet med {1}", k.Navn, e.overskrevetMed);
+            k.kreditoverskrevet += (s, e) => Console.WriteLine($"Kunde {k.Navn}: Kredit overskrevet med {e.overskrevetMed}");
             k.Køb(200);
             k.Køb(500);
 
@@ -20,7 +20,7 @@ namespace Events
 
     public class Kunde
     {
-        public EventHandler<EventKredit> kreditoverskrevet;
+        public event EventHandler<EventKredit> kreditoverskrevet;
         //public EventHandler kreditoverskrevet = (s, e) => Console.WriteLine("Kredit overskrevet");
         public string Navn { get; set; }
         public int Saldo { get; set; }
